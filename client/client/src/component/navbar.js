@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { NavLink, Link } from 'react-router-dom';
 import '../component/navbar.css';
 import myImage from '../img/logo.png';
@@ -12,6 +13,7 @@ const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isSmallScreen, setSmallScreen] = useState(false);
   const [showUserMenu, setShowUserMenu] = useState(false);
+  const navigate = useNavigate();
 
   const token = sessionStorage.getItem('token');
   let decoded = null;
@@ -22,8 +24,9 @@ const Navbar = () => {
 
   let logout = () => {
     sessionStorage.removeItem('token');
+    navigate('/');
     window.location.reload();
-  };
+    };
 
   const handleMenuToggle = () => {
     setMenuOpen(!isMenuOpen);
@@ -79,11 +82,11 @@ const Navbar = () => {
                 About
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink to="/cart" activeClassName="active-link" onClick={closeMenu}>
                 Cart
               </NavLink>
-            </li>
+            </li> */}
             {token && (
               <React.Fragment>
                 <li>
@@ -100,28 +103,28 @@ const Navbar = () => {
             )}
             <li className="dropdown">
               <button id="btn-ope">
-                <NavLink to="/Operations" activeClassName="active-link" onClick={closeMenu}>
+                <NavLink id='oppp' to="/Operations" activeClassName="active-link" onClick={closeMenu}>
                   Operations
                 </NavLink>
               </button>
               <div className="dropdown-content">
-                <li>
-                  <NavLink to="/Operations" activeClassName="active-link" onClick={closeMenu}>
+                <li className='contnt'>
+                  <NavLink  to="/loan" activeClassName="active-link" onClick={closeMenu}>
                     Loan
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink to="/Operations" activeClassName="active-link" onClick={closeMenu}>
+                <li id='link2'>
+                  <NavLink  to="/transfer" activeClassName="active-link" onClick={closeMenu}>
                     Transfer
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink to="/Operations" activeClassName="active-link" onClick={closeMenu}>
+                <li className='contnt'>
+                  <NavLink to="/advice" activeClassName="active-link" onClick={closeMenu}>
                     Advice
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink to="/Operations" activeClassName="active-link" onClick={closeMenu}>
+                <li className='contnt'>
+                  <NavLink to="/history" activeClassName="active-link" onClick={closeMenu}>
                     History
                   </NavLink>
                 </li>

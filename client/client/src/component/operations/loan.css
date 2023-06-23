@@ -27,11 +27,14 @@
   }
   
   #amount {
-    background-color: transparent;
+    background-color: white;
+    height: 20px;
     position: absolute;
-    right: 48%;
-    padding: 15px;
+    right: 32%;
+    top: 14%;
+
     border-radius: 20px;
+
   }
   
   .moveit {
