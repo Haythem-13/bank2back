@@ -1,0 +1,36 @@
+.advice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 400px;
+    position: relative;
+  } 
+  .adv{
+position: absolute;
+top:0;
+ }
+  .askme {
+    margin-bottom: 10px;
+    position: absolute;
+    top:20%;
+    margin:0 20px;
+    width: 250px;
+    height: 60px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+ #sumbit-advice {
+    background-color: #3CAEA3;
+    color: #0d1b2a;
+    font-weight: 600;
+    margin-top: 120px;
+    position: relative;
+  }
+  

@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.footer-links {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15px;
+}
+
+.footer-links a {
+  margin-right: 1rem;
+  color: #96c2dd;
+  text-decoration: none;
+}
+
+.copyright {
+    color: #96c2dd;
+   text-align: right;
+   margin-right: 15px;
+   
+}

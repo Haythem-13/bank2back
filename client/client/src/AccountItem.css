@@ -1,0 +1,42 @@
+/* /* #0d1b2a, #e0e1dd, #778da9 , #e0e1dd  #7ea1f4 #3CAEA3; */
+.MYPROFILE {
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  padding: 20px;
+  margin: 10px auto;
+  width: 50%;
+  position: relative;
+}
+
+#U-name,
+#U-mail,
+#U-salary,
+#U-pass,
+#U-id {
+  color: #fff;
+  text-align: center;
+}
+
+.submit-button {
+  background-color: #3caea3;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.close-button {
+  background-color: #ff4242;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.title{
+  font-size: 1.25rem;
+color: #e0e1dd;
+text-transform: uppercase;
+}

@@ -1,0 +1,55 @@
+.exchange-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 400px;
+    position: relative;
+  }
+  
+ .title-change{
+    position: absolute;
+    top: 0;
+
+  }
+  #exchange-input{
+    margin: 10px 2px;
+    width: 110px;
+    height: 10px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .converted-contain{
+   position: relative;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid #0d1b2a ;
+    background-color: #fff;
+    width: 300px;
+    border-radius: 2px;
+    
+  }
+  .converted-contain .p-top{
+    top: 8%;
+    position: absolute;
+    margin-left: 5px;
+
+  }
+  .converted-contain .p-bottom{
+    bottom: 8%;
+    position: absolute;
+    margin-left: 5px;
+  }
+  select{
+    height: 27px;
+  }
+  .convert{
+    background-color: #3CAEA3;
+    color: #0d1b2a;
+    font-weight: 600;
+  }

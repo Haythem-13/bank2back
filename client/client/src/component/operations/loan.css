@@ -1,0 +1,53 @@
+.loan-container {
+    width: 400px;
+    position: relative;
+  }
+  .loan-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .loan-container input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #loan-btn {
+    margin-top: 10px;
+    background-color: #3CAEA3;
+    color: #0d1b2a;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #amount {
+    background-color: transparent;
+    position: absolute;
+    right: 48%;
+    padding: 15px;
+    border-radius: 20px;
+  }
+  
+  .moveit {
+    margin-left: auto;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #execute-btn {
+    margin-top: -10px;
+    background-color: #3CAEA3;
+    color: #0d1b2a;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }

@@ -1,0 +1,303 @@
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 5px;
+  height: 70px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo {
+  background-color: transparent;
+  margin-left: 10px;
+} 
+
+.logo a:hover {
+  background-color: transparent;
+}
+.logo2{
+  display: none;
+}
+.naviga{
+display: flex;
+justify-content: center;
+position: relative;
+padding-bottom: 30px;
+margin-left: 70px;
+
+}
+.li-log{
+  position: absolute;
+  right: 20px;
+  margin-top: -12px;
+
+}
+.menu{
+  position: absolute;
+  top: -80px; 
+}
+
+.userMenu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+  
+#btn-ope  {
+  background-color: transparent;
+  border: none;
+  font-weight: 00;
+  font-size: 17px;
+  color: red;
+  margin-left: -2px;
+}
+
+nav ul {
+  gap: 30px;
+  float: right;
+
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #0d1b2a;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 10px 8px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.active,
+a:hover {
+  background-color:  #0d1b2a;
+  ;
+  color: #fff;
+  transition: 0.5s, color 0.5s;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e0e1dd;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 120px;
+}
+
+.dropdown-content a:hover {
+  background: #0d1b2a;
+  color: #fff;
+  transition: 0.5s, color 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  text-align: center;
+}
+
+.middle {
+  text-align: center;
+}
+
+img {
+  width: 100px;
+}
+
+
+@media (min-width: 851px) {
+  .logo {
+    display: block;
+  }
+
+  .logo2 {
+    display: none;
+  }
+
+  .userIcon {
+    display: none;
+  }
+
+  .li-log {
+    display: block;
+    position: absolute;
+    top: 5px;
+  }
+}
+.userIcon{
+  display: none;
+  }
+@media screen and (max-width: 850px) {
+
+  .checkbtn {
+    display: block;
+  }
+.btn-log{
+  display: none;
+}
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--medium-blue);
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  .active a:hover,
+  a.active {
+    background: none;
+
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+
+
+@media screen and (max-width: 850px) {
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 18px;
+    height: 3px;
+    background-color: #0d1b2a;
+    border-radius: 1px;
+    position: relative;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .menu-icon:before,
+  .menu-icon:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0d1b2a;
+    border-radius: 1px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu-icon:before {
+    transform: translateY(-6px);
+  }
+
+  .menu-icon:after {
+    transform: translateY(6px);
+  }
+
+  .open .menu-icon {
+    background-color: transparent;
+  }
+
+  .open .menu-icon:before {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  .open .menu-icon:after {
+    transform: translateY(0) rotate(-45deg);
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .open .menu {
+    display: block;
+  }
+  .userIcon {
+    color: #0d1b2a;
+    background-color: transparent;
+  }
+}
+
+.logo img {
+  width: 200px;
+}
+
+.userMenu{
+  position: relative;
+}
+#logname{
+  color: #fff;
+}
+
+#btn-log {
+  position: absolute;
+  width: fit-content;
+  right: 0%;
+  font-size: 17px;
+  background-color: #3CAEA3;
+  border: none;
+  color: #0d1b2a;
+  padding: 10px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+  
+
+button.btn-log:hover {
+  background: #0d1b2a;
+  transition: 0.5s;
+  color: var(--base-color);
+  font-size: large;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+}
+
+#none {
+  background-color: transparent;
+}
+
+#btn-signOut{
+  color: #fff;
+  margin-top: 52px;
+  background-color: #FF4242;
+}
+

@@ -1,0 +1,73 @@
+.bank-history-card {
+  display: flex;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  width: 400px;
+  background: linear-gradient(to bottom, #0d1b2a, #e0e1dd, #778da9);
+}
+
+.card-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.date {
+  font-size: 14px;
+  color: #fff;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+caption {
+  color: #005200;
+}
+
+table {
+  border: 2px solid #787878;
+  width: 800px;
+  border-spacing: 0;
+  margin: auto;
+}
+
+th {
+  background-color: #778da9;
+}
+td,
+th {
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+
+caption {
+  font-family: Verdana, sans-serif;
+  font-size: 2.0em;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+tr:nth-of-type(even) {
+  background-color: #e0e1dd;
+}
+
+tr:first-of-type {
+  background-color: #7ea1f4;
+  color: #fff;
+}
