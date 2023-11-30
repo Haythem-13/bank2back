@@ -26,7 +26,6 @@
 }
 
 form {
-
   display: flex;
   flex-direction: column;
   position: relative;
@@ -34,7 +33,7 @@ form {
 }
 
 .form-group {
-  margin-top: 0px;
+  margin-top: -20px;
   margin-left: 0px;
   position: relative;
   text-align: center;
@@ -97,7 +96,7 @@ input {
 }
 .log-msg{ color: #e0e1dd;
 position: absolute;
-bottom: 10px;
+bottom: 24px;
 left: 23%;}
   
 #go-sign{ color: #e0e1dd;}

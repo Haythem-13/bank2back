@@ -3,6 +3,7 @@ require('dotenv').config();
 const connection = require('./connection');
 const auth = require('./middelware/auth');
 
+connection();
 const app = express();
 const port = 5000;
 app.use(express.json());

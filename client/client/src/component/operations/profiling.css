@@ -1,16 +1,12 @@
 .profiling-container {
-    background-color: #e1dfdd;
-    color: #0d1b2a;
-    padding: 2px;
-    border-radius: 5px;
-    width: 400px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  width: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
   label {
     display: block;
     font-weight: bold;
@@ -35,15 +31,15 @@
   .transfer-btn {
     margin-top: 7px;
   }
-  .distrib{
+  .distrib {
     position: relative;
     bottom: -60px;
   }
+  
   h6 {
-    position: relative;
     font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 0px; /* Adjusted margin bottom */
     transition-timing-function: ease-in-out;
     transition: 5s;
     text-align: center;
@@ -55,25 +51,26 @@
   /* #dist{
     margin-top: 50px;
   } */
-#percen {
-  position: absolute;
-  bottom: 90px;
-}
-#percen1 {
-  position: absolute;
-  bottom: 70px
-}
-#percen2 {
-  position: absolute;
-  bottom: 50px
-}
-.percen span {
-  font-weight: bold;
-}
-
+  #percen {
+    position: absolute;
+    bottom: 80px; /* Adjusted bottom position */
+  }
+  
+  #percen1 {
+    position: absolute;
+    bottom: 60px; /* Adjusted bottom position */
+  }
+  
+  #percen2 {
+    position: absolute;
+    bottom: 40px; /* Adjusted bottom position */
+  }
+  
+  .percen span {
+    font-weight: bold;
+  }
   
   label {
     margin-bottom: 5px;
     margin-top: 5px;
   }
-  

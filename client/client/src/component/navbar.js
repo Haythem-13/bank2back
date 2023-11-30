@@ -78,7 +78,7 @@ const Navbar = () => {
         <div className="naviga">
           <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
             <li>
-              <NavLink to="/about" activeClassName="active-link" onClick={closeMenu}>
+              <NavLink to="/about" className="active-link" onClick={closeMenu}>
                 About
               </NavLink>
             </li>
@@ -90,46 +90,49 @@ const Navbar = () => {
             {token && (
               <React.Fragment>
                 <li>
-                  <NavLink to="/Accounts" activeClassName="active-link" onClick={closeMenu}>
+                  <NavLink to="/Accounts" className="active-link" onClick={closeMenu}>
                     My Account
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/contact" activeClassName="active-link" onClick={closeMenu}>
+                  <NavLink to="/contact" className="active-link" onClick={closeMenu}>
                     Contact
                   </NavLink>
                 </li>
               </React.Fragment>
             )}
             <li className="dropdown">
-              <button id="btn-ope">
-                <NavLink id='oppp' to="/Operations" activeClassName="active-link" onClick={closeMenu}>
-                  Operations
-                </NavLink>
-              </button>
-              <div className="dropdown-content">
-                <li className='contnt'>
-                  <NavLink  to="/loan" activeClassName="active-link" onClick={closeMenu}>
-                    Loan
-                  </NavLink>
-                </li>
-                <li id='link2'>
-                  <NavLink  to="/transfer" activeClassName="active-link" onClick={closeMenu}>
-                    Transfer
-                  </NavLink>
-                </li>
-                <li className='contnt'>
-                  <NavLink to="/advice" activeClassName="active-link" onClick={closeMenu}>
-                    Advice
-                  </NavLink>
-                </li>
-                <li className='contnt'>
-                  <NavLink to="/history" activeClassName="active-link" onClick={closeMenu}>
-                    History
-                  </NavLink>
-                </li>
-              </div>
-            </li>
+  <button id="btn-ope">
+    <NavLink id='oppp' to="/Operations" className="active-link" onClick={closeMenu}>
+      Operations
+    </NavLink>
+  </button>
+  <div className="dropdown-content">
+    <ul>
+      <li className='contnt'>
+        <NavLink to="/loan" className="active-link" onClick={closeMenu}>
+          Loan
+        </NavLink>
+      </li>
+      <li id='link2'>
+        <NavLink to="/transfer" className="active-link" onClick={closeMenu}>
+          Transfer
+        </NavLink>
+      </li>
+      <li className='contnt'>
+        <NavLink to="/advice" className="active-link" onClick={closeMenu}>
+          Advice
+        </NavLink>
+      </li>
+      <li className='contnt'>
+        <NavLink to="/history" className="active-link" onClick={closeMenu}>
+          History
+        </NavLink>
+      </li>
+    </ul>
+  </div>
+</li>
+
           </ul>
         </div>
         {isSmallScreen ? (
@@ -147,20 +150,20 @@ const Navbar = () => {
           <li className="li-log">
             {!token && (
               <div className="userMenu">
-                <NavLink to="/login" activeClassName="active-link" onClick={closeMenu}>
+                <NavLink to="/login" className="active-link" onClick={closeMenu}>
                   <button id="btn-log">LOGIN</button>
                 </NavLink>
               </div>
             )}
           {token && (
         <div className="userMenu">
-            <NavLink to="/login" activeClassName="active-link" onClick={closeMenu}>
+            <NavLink to="/login" className="active-link" onClick={closeMenu}>
               <button id="btn-log">
               <Link id='logname'>{decoded.username}</Link>
               </button>
             </NavLink>
               <div className="logmeout"> 
-                 <Link on onClick={logout}><button id="btn-signOut">Log Out</button></Link> 
+                 <Link  onClick={logout}><button id="btn-signOut">Log Out</button></Link> 
               </div>
         </div>
 )}

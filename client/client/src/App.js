@@ -51,7 +51,7 @@ const App = () => {
             <Route path="Transfer" element={<Transfer/>} />
             <Route path="/history" element={<BankHistory/>} />
             <Route
-              path="/"
+              path="/exchange"
               element={
                 <React.Fragment>
                   <ExchangeRateConverter />

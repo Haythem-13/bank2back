@@ -57,8 +57,8 @@ const Profiling = () => {
         </p>
       </div> */}
       <div className="profiling-container">
-        <h2 className="profili">Profile Section</h2>
-        <label htmlFor="monthlyIncome">Monthly Income:</label>
+        <h2 className="loa">Profile Section</h2>
+        <label htmlFor="monthlyIncome" id='income'>Monthly Income:</label>
         <input
           className="profile-input"
           type="number"

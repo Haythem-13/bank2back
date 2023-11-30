@@ -9,33 +9,27 @@ const createNewAccounts = async (req, res) => {
   try {
     const { username, email, password, salary } = req.body;
 
-    // Check if username already exists in the database
     const existingUsername = await Accounts.findOne({ username });
-
-    // Check if email already exists in the database
     const existingEmail = await Accounts.findOne({ email });
 
     if (existingUsername) {
-      // If username already exists, send an error response
-      res.status(400).send({ msg: "Username is already used" });
+      res.status(400).send({ msg: 'Username is already used' });
     } else if (existingEmail) {
-      // If email already exists, send an error response
-      res.status(400).send({ msg: "Email is already used" });
+      res.status(400).send({ msg: 'Email is already used' });
     } else {
-      let hashedPassword= await bcrypt.hash(password,10);
-      let newUser= await Accounts.create({
+      const hashedPassword = await bcrypt.hash(password, 10);
+      const newUser = await Accounts.create({
         username,
         email,
         salary,
-        password:hashedPassword
+        password: hashedPassword,
       });
 
-      // If username and email are unique, create the new account
-      return res.send({ msg: "Account successfully created", newUser });
+      res.send({ msg: 'Account successfully created', newUser });
     }
-    
   } catch (error) {
-    res.status(500).send({ msg: "Cannot create the account", error });
+    console.error(error);
+    res.status(500).send({ msg: 'Cannot create the account', error });
   }
 };
 

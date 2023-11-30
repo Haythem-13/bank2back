@@ -6,10 +6,10 @@ import myImage1 from '../img/logo.png';
 const LandingPage = () => {
   return (
     <div className="Intro">
-      <div class="loader">
-  <div class="inner one"></div>
-  <div class="inner two"></div>
-  <div class="inner three"></div>
+      <div className="loader">
+  <div className="inner one"></div>
+  <div className="inner two"></div>
+  <div className="inner three"></div>
 </div>
       <h1>Bank to Back</h1>
       <h4 className='slogan'>ClientEase Bank:Care& simplicity</h4>

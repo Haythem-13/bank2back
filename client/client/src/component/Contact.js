@@ -28,16 +28,16 @@ const ContactPage = () => {
   return (
     <div className="contact-container">
       <div className="social-links">
-        <a href="https://www.facebook.com">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
           <Facebook className="social-icon" />
         </a>
-        <a href="https://www.twitter.com">
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
           <Twitter className="social-icon" />
         </a>
-        <a href="https://www.instagram.com">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
           <Instagram className="social-icon" />
         </a>
-        <a href="https://www.youtube.com">
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" >
           <Youtube className="social-icon" />
         </a>
       </div>

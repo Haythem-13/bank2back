@@ -55,7 +55,6 @@
   background-color: #fff;
   color: #0d1b2a;
   font-size: 16px;
-
   position: relative;
   width: 100%;
   max-width: 300px;
@@ -89,7 +88,7 @@
 }
 
 #input2{
-  margin-top: -20px;
+  margin-top: 5px;
   width: 300px;
   border: 1px solid #0d1b2a;
   height: 20px;

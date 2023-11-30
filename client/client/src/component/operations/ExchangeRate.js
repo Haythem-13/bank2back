@@ -71,7 +71,7 @@ const ExchangeRateConverter = () => {
 
   return (
     <div className='exchange-container'>
-      <h2 className='title-change'>Exchange Rate Converter</h2>
+      <h2 className='loa'>Exchange Rate Converter</h2>
       <div>
         <input
           id='exchange-input'

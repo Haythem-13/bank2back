@@ -10,48 +10,53 @@
   justify-content: center;
   position: relative;
 }
-.bank-title{
+
+.bank-title {
   position: absolute;
   top: 0%;
 }
-.form-group{
-position: absolute;
-top: 40px;
+
+.form-group {
+  position: absolute;
+  top: 40px;
 }
-#form-group{
+
+#form-group {
   position: absolute;
   top: 60px;
+}
 
-  }
-  
-  input[type="text"] {
-    width: 40%;
-    border: 1px solid #778da9;
-    border-radius: 3px;
-  }
-  
-#trfr-amount{
+input[type="text"] {
+  width: 40%;
+  border: 1px solid #778da9;
+  border-radius: 3px;
+  padding: 8px; /* Added padding for better visual appearance */
+  margin: 5px; /* Added margin for better spacing */
+}
+
+/* #Amount {
   position: absolute;
   top: 30px;
-  width: 160px;
-  margin: 0 -85px;
-}
-.form-group2{
+  width: 10px;
+  margin: 0 -60px;
+} */
+
+.form-group2 {
   position: absolute;
   top: 120px;
-  }
-  .form-group3{
-    position: absolute;
-    top: 180px;
-    }
+}
 
-    #fromAccount{
-      margin: 0 40px;
-    }
-    #toAccount{
-      margin: 0 40px;
+.form-group3 {
+  position: absolute;
+  top: 180px;
+}
+#Amount,
+#fromAccount,
+#toAccount {
+  width: 50%; /* Set the width to match the other input fields */
+  margin: 0 40px;
+}
 
-    }
 label {
   display: flex;
   font-weight: bold;
@@ -63,9 +68,9 @@ label {
 
 .transfer-btn {
   margin-top: 7px;
-  background-color: #3CAEA3;
-    color: #0d1b2a;
-    font-weight: 600;
+  background-color: #3caeaa;
+  color: #0d1b2a;
+  font-weight: 600;
   padding: 10px 20px;
   border: none;
   border-radius: 3px;

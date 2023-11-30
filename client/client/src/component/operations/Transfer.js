@@ -48,7 +48,7 @@ const Transfer = () => {
       <h2 className="bank-title">Bank Transfer</h2>
       <div id="form-group">
         <label htmlFor="amount">Amount:</label>
-        <input type="text" id="rfr-amount" value={amount} onChange={handleAmountChange} />
+        <input type="text" id="Amount" value={amount} onChange={handleAmountChange} />
       </div>
       <div className="form-group2">
         <label htmlFor="fromAccount">From Account:</label>

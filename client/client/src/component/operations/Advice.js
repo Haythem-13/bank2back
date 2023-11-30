@@ -22,7 +22,7 @@ const Advice = () => {
 
   return (
     <div className='advice-container'>
-      <h2 className='adv'>Advice Page</h2>
+      <h2 className='loa'>Advice Page</h2>
       <form onSubmit={handleSubmit}>
         <textarea
           className="askme"
@@ -35,7 +35,7 @@ const Advice = () => {
       {answer && (
         <div>
           <h2>Answer:</h2>
-          <p>{answer}</p>
+          <div className='answer'><p>{answer}</p></div>
         </div>
       )}
     </div>
