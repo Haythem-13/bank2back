@@ -29,11 +29,10 @@ form {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: -30px;
+  margin-top: 0px;
 }
 
 .form-group {
-  margin-top: -20px;
   margin-left: 0px;
   position: relative;
   text-align: center;
@@ -42,6 +41,7 @@ form {
 
 label {
   font-weight: bold;
+  margin-top: 15px;
 }
 
 input {

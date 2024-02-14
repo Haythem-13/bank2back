@@ -1,4 +1,4 @@
-.bank-history-card {
+/* .bank-history-card {
   display: flex;
   text-align: center;
   border-radius: 8px;
@@ -6,7 +6,7 @@
   margin-bottom: 16px;
   width: 400px;
   background: linear-gradient(to bottom, #0d1b2a, #e0e1dd, #778da9);
-}
+} */
 
 .card-header {
   display: flex;

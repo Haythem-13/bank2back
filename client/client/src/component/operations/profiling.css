@@ -33,12 +33,13 @@
   }
   .distrib {
     position: relative;
-    bottom: -60px;
+    bottom: -101px;
   }
-  
+#dist{
+margin-top: -90px;}
   h6 {
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 0px; /* Adjusted margin bottom */
     transition-timing-function: ease-in-out;
     transition: 5s;

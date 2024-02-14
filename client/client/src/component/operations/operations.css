@@ -20,11 +20,11 @@
     display: none;
     justify-content: center;
     position: relative;
-    right: 0;
+    right: -40px;
   }
   .contain-1{
     position: absolute;
-    left: 0%;
+    left: 7%;
     
   }
   .desc-1{
@@ -32,7 +32,7 @@ color: #fff;
 position: absolute;
 left: 0%;
 bottom: 0%;
-margin-left: -250px;
+margin-left: -340px;
 background-color: #0d1b2a;
 height: 300px;
 width: 250px;
@@ -106,7 +106,7 @@ overflow-y: scroll;
     padding: 17px 36px;
     position: relative;
     margin-top: 5px;
-    margin-left: 25px;
+    /* margin-left: 0px; */
     border: 2px solid #e0e1dd;
     border-radius: 0px;
     padding: 17px 36px;

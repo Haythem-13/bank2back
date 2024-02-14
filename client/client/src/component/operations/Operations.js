@@ -61,14 +61,14 @@ console.log(token);
           <div className="rib">LOAN</div>
         </div>
         <div className={`center-left${showTransfer ? " active" : ""}`}>
-          <Transfer />
-          <div className="desc-1"> The  loan simulation application. It allows users to input the principal amount they want to loan, the duration for which they want the loan (in years), and then calculates the total amount to be repaid based on a predefined interest rate formula.</div>
-          {/* <div className="rib">Transfer</div> */}
+        <div className="contain-1">   <Transfer /></div> 
+          <div className="desc-1"> You can move money from one bank to another online in just a few steps: Log on to your bank's website or connect via the bank's app. Click on the transfer function and select Transfer to another bank. Enter the routing and account numbers for the account at the other bank.</div>
+          <div className="rib">TRANSFER</div>
         </div>
         <div className={`center-right${showExchangeRate ? " active" : ""}`}>
-          <ExchangeRateConverter />
-          <div className="desc-1"> The  loan simulation application. It allows users to input the principal amount they want to loan, the duration for which they want the loan (in years), and then calculates the total amount to be repaid based on a predefined interest rate formula.</div>
-          {/* <div className="rib">Exchange RateConverter</div> */}
+        <div className="contain-1">  <ExchangeRateConverter /></div> 
+          <div className="desc-1"> The converter allows you to exchange one currency, such as the dollar, for another, such as the euro. You give it an amount of one currency and it gives you back an amount of another currency with similar purchasing power, minus any fees or other charges.</div>
+          <div className="rib">Exchange RateConverter</div>
         </div>
         {showHistory && (
           <div className="history">
