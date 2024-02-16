@@ -51,7 +51,22 @@ Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests to improve the project.
 
 
-<h4>npm Packages Used
+
+
+Getting Started: Clone the repository: git clone <repository-url https://github.com/Haythem-13/bank2back>
+
+Navigate to the project directory: cd bank2back
+
+Install dependencies: npm install
+
+Start the development server: npm start
+
+Access the application at: http://localhost:3000
+
+Contribution: Contributions are welcome! Feel free to open issues or submit pull requests to improve the project.
+
+<h4> **npm Packages Used**
+
 axios: ^1.4.0
 bcrypt: ^5.1.0
 cors: ^2.8.5
