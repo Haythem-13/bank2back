@@ -7,7 +7,7 @@ import myImage2 from '../img/logores.png';
 import HamburgerViews from './HamburgerViews';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import jwt_decode from 'jwt-decode';
+import jwtDecode from 'jwt-decode';
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -18,9 +18,10 @@ const Navbar = () => {
   const token = sessionStorage.getItem('token');
   let decoded = null;
   if (token) {
-    decoded = jwt_decode(token);
+    decoded = jwtDecode(token);
     console.log(decoded);
   }
+  
 
   let logout = () => {
     sessionStorage.removeItem('token');

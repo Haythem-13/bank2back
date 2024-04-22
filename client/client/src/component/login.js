@@ -15,31 +15,48 @@ const Login = ({ setIsLoginMode }) => {
   const navigate= useNavigate();
 
   const handleSubmit = async (e) => {
-    let token=sessionStorage.getItem("token")
-    try {
     e.preventDefault();
-    const loginAccount = {username: userName,password: password};
-      const response = await axios.post("http://localhost:5000/Accounts/login", loginAccount,
-      {headers:{"Authorization":`Bearer${token}`}
-    });
-      console.log(response);
-      setAlertMessage(response.data.msg);
-      setAlertType('success');
-      if (response) {
+    let token = sessionStorage.getItem("token");
+  
+    try {
+      const loginAccount = { username: userName, password: password };
+      const response = await axios.post(
+        "http://localhost:5000/Accounts/login",
+        loginAccount,
+        {
+          headers: { "Authorization": `Bearer ${token}` }
+        }
+      );
+  
+      if (response && response.data) {
+        console.log(response);
+        setAlertMessage(response.data.msg);
+        setAlertType('success');
         sessionStorage.setItem("token", JSON.stringify(response.data));
-        setUserName(response.data.username); // Set the userName state using the setUserName prop
+        setUserName(response.data.username);
         navigate("/");
         window.location.reload();
+      } else {
+        throw new Error("Invalid response from server");
       }
-    }
-      catch (error) {
+    } catch (error) {
+      if (error.response && error.response.data) {
         setAlertMessage(error.response.data.msg);
         setAlertType('error');
+      } else if (error.message) {
+        setAlertMessage(error.message);
+        setAlertType('error');
+      } else {
+        setAlertMessage("An error occurred while processing your request");
+        setAlertType('error');
+      }
     }
-
+  
     setUserName('');
     setPassword('');
   };
+  
+  
 
   return (
     <div className="form-container login-mode">
@@ -84,3 +101,5 @@ const Login = ({ setIsLoginMode }) => {
 };
 
 export default Login;
+
+

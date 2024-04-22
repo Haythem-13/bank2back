@@ -31,14 +31,39 @@ const App = () => {
         <div className="content">
           <Routes>
             <Route className="header" path="/" element={<LandingPage />} />
-            <Route path="/login" element={<LoginSignupForm />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/contact" element={<Contact/>} />
-            <Route path="/Accounts" element={<AccountsItem/>} />
+            
+
             <Route
-              path="/operations"
+              path="/login"
               element={
-                <Operations
+                <LoginSignupForm
+                  isLoggedIn={isLoginMode}
+                  onToggleLoginMode={handleToggleLoginMode}
+                />
+              }
+            />
+            <Route
+              path="/signup"
+              element={
+                <Signup
+                  isLoggedIn={isLoginMode}
+                  onToggleLoginMode={handleToggleLoginMode}
+                />
+              }
+            />
+            <Route
+              path="/login"
+              element={
+                <LoginSignupForm
+                  isLoggedIn={isLoginMode}
+                  onToggleLoginMode={handleToggleLoginMode}
+                />
+              }
+            />
+            <Route
+              path="/login"
+              element={
+                <LoginSignupForm
                   isLoggedIn={isLoginMode}
                   onToggleLoginMode={handleToggleLoginMode}
                 />
